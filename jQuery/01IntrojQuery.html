@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+
+    <!-- jQuery CDN Link  -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      #box {
+        width: 300px;
+        height: 300px;
+        /* display: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Introduction To jQuery</h1>
+    <div id="box">
+      <div class="heet">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, delectus
+        odio unde quaerat iusto illo nobis sapiente voluptatem quasi ad natus
+        quia fugit blanditiis, officia rem saepe porro possimus tempora.
+      </div>
+    </div>
+    <script>
+      $(function () {
+        $("h1").css("background-color", "Teal");
+        $("#box").css("background-color", "red");
+        $(".heet").css("color", "khaki");
+      });
+
+    //   $("h1").click(function () {
+    //     $("#box").hide(1000);
+    //   });
+    //   $("h1").click(function () {
+    //     $("#box").show(1000);
+    //   });
+    //   $("h1").click(function () {
+    //     $("#box").fadeIn(1000);
+    //   });
+    //   $("h1").click(function () {
+    //     $("#box").fadeOut(5000);
+    //   });
+      $("h1").click(function () {
+        $("#box").fadeToggle(2000);
+      });
+    </script>
+  </body>
+</html>
