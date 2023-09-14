@@ -11,6 +11,11 @@
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
+    <style>
+      p{
+        background-color: teal;
+      }
+    </style>
   </head>
   <body>
     <h1>Adding jQuery To HTMl</h1>
@@ -29,12 +34,16 @@
       In place of $(document).ready(), you can use shorthand notation $() only.
     </p>
     <script>
-    //   $(document).ready(function () {
-        $(function() {  
+      // $(document).ready(function () {
+        $(function() {
         $("h1").css("background-color", "khaki");
         $("h2").css("background-color", "Teal");
-        $("p").css("background-color", "crimson");
+        // $("p").css("background-color", "crimson");
+        $("p").css({ backgroundColor: "crimson", color: "white" });
+        $("p").css("width", "550px").css("height", "300px").css("font-size", "8pt").css("background-color", "red");
+        $("p").css({ "background-color": "teal", "color": "khaki" });
       });
     </script>
+
   </body>
 </html>

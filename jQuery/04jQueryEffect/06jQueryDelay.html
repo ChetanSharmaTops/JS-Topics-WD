@@ -37,9 +37,16 @@
     <script>
         $(function(){
             $('#delay').click(function(){
-                $('.box').delay(5000).animate({marginLeft: "500px"})
+            // $('.box').hover(function(){
+                $('.box').delay(2000).animate({marginLeft: "500px"})
+                // $('.box').css({background: "teal"})
             })
         })
+            $('.box').hover(function(){
+                // $('.box').css({marginLeft: "0px"})
+                $('.box').delay(2000).animate({marginLeft: "0px"})
+            })
+
     </script>
 </body>
 </html>
