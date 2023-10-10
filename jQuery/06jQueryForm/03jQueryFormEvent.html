@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form Event</title>
+    <style>
+        .box{
+            border: 1px solid red;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form event</h1>
+    <form action="" >
+        <label for="">Name:  </label><input type="text" id="name">
+        <br><br>
+        <label for="">Email:  </label><input type="text" id="email">
+        <br><br>
+        <select  id="course">
+            <option value="java">Java</option>
+            <option value="FED">FED</option>
+            <option value="WD">WD</option>
+            <option value="Python">Python</option>
+        </select>
+        <br><br>
+        <button>Button</button>
+    </form>
+    <div class="box"></div>
+</body>
+<script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#name,#email,#course').focus(function(){
+            // $(this).css('background-color', 'teal');
+            $(this).css({ "background-color": "red", "color": "white" });
+        });
+
+
+        $('#name,#email,#course').blur(function(){
+            // $(this).css('background-color', '');
+            $(this).css('background-color', '');
+        });
+
+        $('#course').change(function(){
+            // $(this).css('background-color', 'pink');
+            var a = $(this).val();
+            $('.box').html(a);
+        });
+    });
+</script>
+</html>

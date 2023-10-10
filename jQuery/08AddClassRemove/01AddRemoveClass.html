@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Class Remove Class</title>
+     <!-- Adding jQuery To HTMl -->
+    <script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
+  </head>
+  <style>
+    .textColor{
+        background-color: crimson;
+        color: aliceblue;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, sint quia
+      numquam sapiente dolores explicabo mollitia quaerat reprehenderit
+      voluptates ratione beatae iusto quisquam nesciunt ea quae iste, impedit, a
+      doloremque!
+    </p>
+
+    <button class="add">Add Class</button>
+    <button class="remove">Remove Class</button>
+    <button class="toggleClass">Toggle Class</button>
+
+
+    <script>
+        $(function () {
+        $(".add").click(function () {
+          $("p").addClass("textColor");
+        });
+        $(".remove").click(function () {
+          $("p").removeClass("textColor");
+        });
+        $(".toggleClass").click(function () {
+          $("p").toggleClass("textColor");
+        });
+      });
+    </script>
+
+
+  </body>
+</html>

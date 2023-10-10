@@ -11,6 +11,8 @@
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
+
+    <!-- <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script> -->
     <style>
       p{
         background-color: teal;
@@ -34,15 +36,19 @@
       In place of $(document).ready(), you can use shorthand notation $() only.
     </p>
     <script>
-      // $(document).ready(function () {
-        $(function() {
-        $("h1").css("background-color", "khaki");
-        $("h2").css("background-color", "Teal");
-        // $("p").css("background-color", "crimson");
-        $("p").css({ backgroundColor: "crimson", color: "white" });
-        $("p").css("width", "550px").css("height", "300px").css("font-size", "8pt").css("background-color", "red");
-        $("p").css({ "background-color": "teal", "color": "khaki" });
-      });
+      // console.log($);
+      // console.log(jQuery);
+      $(document).ready(function () {
+      
+        // $(function() {
+          // $("Selector").action();    // Syntax
+          $("h1").css("background-color", "yellow");
+          $("h2").css("background-color", "purple");
+          // $("p").css("background-color", "crimson");
+          // $("p").css({ backgroundColor: "crimson", color: "white" });
+          // $("p").css("width", "550px").css("height", "300px").css("font-size", "8pt").css("background-color", "red");
+          $("p").css({ "background-color": "teal", "color": "khaki" });
+        });
     </script>
 
   </body>
